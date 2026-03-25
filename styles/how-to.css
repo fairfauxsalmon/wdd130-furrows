@@ -1,0 +1,170 @@
+/* font */
+/* oswald, montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+/* base */
+*{
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 300px;
+}
+:root {
+    --orange-pri: #e5a93f;
+    --red-sec: #8c271e;
+    --green-acc: #6b8e23;
+    --white-acc: #f9f9f9;
+}
+body {
+    width: 80vw;
+    justify-self: center;
+    margin: inline auto;
+    padding-top: 20px;
+}
+#wrapper {
+    padding: 20px;
+    background: linear-gradient(var(--white-acc), var(--green-acc));
+}
+h1 {
+    color: var(--red-sec);
+    font-size: 3em;
+}
+h2 {
+    color: var(--red-sec);
+    font-size: 2em;
+}
+h3 {
+    color: var(--red-sec);
+}
+h4 {
+    color: var(--green-acc);
+    font-size: 1.5em;
+}
+h5 {
+    color: cyan;
+}
+h6 {
+    color: blue;
+}
+p {
+    color: var(--red-sec);
+}
+
+/* header */
+header {
+/*Display stuff*/
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+/*Box model stuff*/
+    height: 100px;
+}
+.logo {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 100px;
+    z-index: 1;
+}
+.title {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+    background: var(--re)
+}
+
+/* nav */
+nav {
+/*Display stuff*/
+    grid-column: 1/3;
+    grid-row: 2/3;
+/*Box model stuff*/
+    background: var(--orange-pri);
+/*Typography stuff*/
+    font-family: "Montserrat";
+    font-weight: 500;
+    text-decoration: none;
+}
+ul {
+/*Display stuff*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+/*Box model stuff*/
+    margin: 0px auto;
+/*Miscellaneous*/
+    list-style-type: none;
+}
+a {
+/*Display stuff*/
+    display: block;
+/*Box model stuff*/
+    padding: 15px;
+/*Typography stuff*/
+    text-decoration: none;
+    color: var(--red-sec);
+}
+a:hover {
+    background: var(--red-sec);
+    color: var(--white-acc);
+}
+
+/* heading */
+.heading {
+    text-align: center;
+    padding-top: 20px;
+}
+.subheading {
+    text-align: center;
+}
+
+/* sections */
+.step {
+    margin: 25px;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(var(--white-acc), var(--orange-pri));
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgb(80, 98, 77);
+}
+.step-no {
+    text-shadow: var(--red-sec);
+    font-weight: 700;
+}
+.action {
+    margin: 15px;
+    padding: 5px;
+    text-shadow: 0 0 10px var(--white-acc);
+}
+.why {
+    margin: 10px 20px;
+    padding: 5px;
+    text-shadow: 0 0 10px var(--white-acc);
+}
+.step img {
+    border-radius: 15px;
+    border: var(--green-acc) solid 7px;
+    width: 50vw;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background: var(--red-sec);
+    padding: 15px;
+    border-top: 3px solid var(--white-acc)
+}
+footer p {
+    color: var(--white-acc);
+}
