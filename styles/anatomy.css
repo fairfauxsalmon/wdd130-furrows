@@ -11,6 +11,7 @@ nav {
 }
 #bread {
     border: 2px solid black;  
+    padding: 10px;
    
 }
 #veggies {
@@ -27,10 +28,42 @@ nav {
 }
 p{
     font-family: "montserrat";
+    color: #8C271E;
 }
 h1 {
    font-family: "oswald"; 
-}
+   color: #E5A93F;
+   }
 h2 {
     font-family:"montserrat" ;
+    color:#E5A93F ;
+}
+.title {
+    color: #E5A93F;
+}
+
+
+#bread, #meat, #cheese, #veggies {
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 30px;    
+    width: 60%;             
+    max-width: 800px;       
+    align-self: center;     
+    box-sizing: border-box; 
+}
+
+
+#bread img, #meat img, #cheese img, #veggies img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+header {
+    margin-bottom: 40px; /* Space between header and nav/content */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;           /* Spaces out the title and description inside */
 }
