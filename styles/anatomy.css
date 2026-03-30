@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+#bread {
+    border: 2px solid black;  
+   
+}
+#veggies {
+    border: 2px solid black;  
+   
+}
+#cheese {
+    border: 2px solid black;  
+   
+}
+#meat {
+    border: 2px solid black;  
+   
+}
+p{
+    font-family: "montserrat";
+}
+h1 {
+   font-family: "oswald"; 
+}
+h2 {
+    font-family:"montserrat" ;
+}
